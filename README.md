@@ -2,7 +2,7 @@
 
 
 
-This repo demonstrates **passwordless** VM operations in Azure using a \*\*User-Assigned Managed Identity\*\* from a controller VM.
+This repo demonstrates **passwordless** VM operations in Azure using a **User-Assigned Managed Identity** from a controller VM.
 
 No client secrets, no certificates.
 
@@ -14,15 +14,15 @@ No client secrets, no certificates.
 
 \- Target VM (managed): e.g. `vm-winsec01`
 
-\- Auth: \*\*User-Assigned Managed Identity\*\* (UAMI)
+\- Auth: **User-Assigned Managed Identity** (UAMI)
 
-\- Control plane: \*\*Azure Resource Manager (ARM)\*\* via HTTPS 443
+\- Control plane: **Azure Resource Manager (ARM)** via HTTPS 443
 
 
 
 \## Key features
 
-\- Passwordless authentication using Azure \*\*IMDS\*\* (169.254.169.254) + Entra ID token issuance
+\- Passwordless authentication using Azure **IMDS** (169.254.169.254) + Entra ID token issuance
 
 \- RBAC-based authorization (least privilege recommended)
 
