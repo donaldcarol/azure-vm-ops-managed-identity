@@ -2,7 +2,7 @@
 
 
 
-This repo demonstrates \*\*passwordless\*\* VM operations in Azure using a \*\*User-Assigned Managed Identity\*\* from a controller VM.
+This repo demonstrates **passwordless** VM operations in Azure using a \*\*User-Assigned Managed Identity\*\* from a controller VM.
 
 No client secrets, no certificates.
 
