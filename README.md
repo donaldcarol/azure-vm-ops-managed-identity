@@ -5,7 +5,7 @@
 ![Security](https://img.shields.io/badge/Security-OIDC%20Enabled-brightgreen)
 ![IaC Ready](https://img.shields.io/badge/IaC-Ready-informational)
 
-\# Azure VM Ops via User-Assigned Managed Identity (UAMI)
+# Azure VM Ops via User-Assigned Managed Identity (UAMI)
 
 
 
@@ -15,47 +15,46 @@ No client secrets, no certificates.
 
 
 
-\## Scenario
+## Scenario
 
-\- Controller VM (runs scripts): e.g. `VM-Eah-test`
+- Controller VM (runs scripts): e.g. `VM-Eah-test`
 
-\- Target VM (managed): e.g. `vm-winsec01`
+- Target VM (managed): e.g. `vm-winsec01`
 
-\- Auth: **User-Assigned Managed Identity** (UAMI)
+- Auth: **User-Assigned Managed Identity** (UAMI)
 
-\- Control plane: **Azure Resource Manager (ARM)** via HTTPS 443
-
-
-
-\## Key features
-
-\- Passwordless authentication using Azure **IMDS** (169.254.169.254) + Entra ID token issuance
-
-\- RBAC-based authorization (least privilege recommended)
-
-\- Two approaches:
-
-&nbsp; 1) Azure CLI (`az login --identity --client-id ...`)
-
-&nbsp; 2) Direct REST calls to ARM (no Azure CLI)
+- Control plane: **Azure Resource Manager (ARM)** via HTTPS 443
 
 
+## Key features
 
-\## Prerequisites
+- Passwordless authentication using Azure **IMDS** (169.254.169.254) + Entra ID token issuance
 
-\- UAMI created and attached to the controller VM
+- RBAC-based authorization (least privilege recommended)
 
-\- RBAC role assignment for the UAMI on the target scope (VM or Resource Group)
+- Two approaches:
 
-\- Azure CLI installed (for `vm-power.ps1`), optional for REST version
+1) Azure CLI (`az login --identity --client-id ...`)
+
+2) Direct REST calls to ARM (no Azure CLI)
 
 
 
-\## Usage
+## Prerequisites
+
+- UAMI created and attached to the controller VM
+
+- RBAC role assignment for the UAMI on the target scope (VM or Resource Group)
+
+- Azure CLI installed (for `vm-power.ps1`), optional for REST version
 
 
 
-\### Power operations (Azure CLI)
+## Usage
+
+
+
+### Power operations (Azure CLI)
 
 ```powershell
 
