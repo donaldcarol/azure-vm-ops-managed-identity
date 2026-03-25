@@ -1,3 +1,10 @@
+![GitHub last commit](https://img.shields.io/github/last-commit/donaldcarol/azure-authentication-patterns)
+![GitHub repo size](https://img.shields.io/github/repo-size/donaldcarol/azure-authentication-patterns)
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+![Azure](https://img.shields.io/badge/Azure-Identity-blue)
+![Security](https://img.shields.io/badge/Security-OIDC%20Enabled-brightgreen)
+![IaC Ready](https://img.shields.io/badge/IaC-Ready-informational)
+
 \# Azure VM Ops via User-Assigned Managed Identity (UAMI)
 
 
